@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عدي معمر عيسى | مختص تصميم وتطوير المواقع</title>
+  <meta name="description" content="الموقع الشخصي للمهندس عدي معمر عيسى - مختص تصميم وتطوير المواقع، واجهات عصرية تجمع بين الفخامة والتقنية والأداء العالي.">
+  
+  <!-- خطوط Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- مكتبة الأيقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- ملف التنسيقات CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- خلفية الجزيئات والشبكة التقنية -->
+  <div class="tech-bg">
+    <canvas id="techCanvas"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+  </div>
+
+  <!-- 1. Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">عدي معمر عيسى</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">الرئيسية</a>
+        <a href="#about" class="nav-link">عني</a>
+        <a href="#skills" class="nav-link">مهاراتي</a>
+        <a href="#projects" class="nav-link">أعمالي</a>
+        <a href="#contact" class="nav-link">تواصل معي</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../Adi_Moamer_Portfolio.zip" download="Adi_Moamer_Portfolio.zip" class="btn-nav-zip">
+          <i class="fa-solid fa-download"></i>
+          <span>تحميل ZIP</span>
+        </a>
+        <a href="https://wa.me/967782616979" target="_blank" rel="noopener noreferrer" class="btn-nav-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>واتساب</span>
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="فتح القائمة">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="tech-badge">
+          <span class="pulse-dot"></span>
+          <span>متاح لتنفيذ المشاريع التقنية والبرمجية</span>
+        </div>
+
+        <h1 class="hero-title">
+          أهلاً، أنا <span class="highlight-name">عدي معمر عيسى</span>
+        </h1>
+
+        <div class="typing-container">
+          <span class="typing-role">مختص تصميم وتطوير المواقع</span>
+          <div class="typing-box">
+            <span class="typing-prefix">&gt; </span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="cursor">|</span>
+          </div>
+        </div>
+
+        <p class="hero-description">
+          أصمم وأطور مواقع ويب عصرية تجمع بين التصميم الجذاب، الأداء، وتجربة المستخدم. أجمع بين اللمسة الفنية الدقيقة والأكواد النظيفة لبناء هوية رقمية فريدة ومؤثرة.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>استكشف أعمالي</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>تواصل معي</span>
+            <i class="fa-regular fa-paper-plane"></i>
+          </a>
+        </div>
+
+        <div class="quick-contact-pills">
+          <a href="tel:782616979" class="quick-pill">
+            <i class="fa-solid fa-phone"></i>
+            <span>782616979</span>
+          </a>
+          <a href="https://wa.me/967782616979" target="_blank" rel="noopener noreferrer" class="quick-pill">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>محادثة فورية</span>
+          </a>
+          <a href="https://github.com/oday-moamer" target="_blank" rel="noopener noreferrer" class="quick-pill">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="image-glow-ring"></div>
+        <div class="image-frame">
+          <img src="images/profile.jpg" alt="عدي معمر عيسى - مختص تصميم وتطوير المواقع" class="profile-img" onerror="this.onerror=null; this.src='images/oday_profile_1790535337357.jpg';">
+          <div class="image-corner corner-tl"></div>
+          <div class="image-corner corner-tr"></div>
+          <div class="image-corner corner-bl"></div>
+          <div class="image-corner corner-br"></div>
+        </div>
+        <div class="floating-tech-card float-1">
+          <i class="fa-solid fa-code"></i>
+          <div>
+            <strong>Clean Code</strong>
+            <small>معايير حديثة</small>
+          </div>
+        </div>
+        <div class="floating-tech-card float-2">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <div>
+            <strong>UI/UX Design</strong>
+            <small>واجهات فخمة</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. About Me Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">نبذة تعريفية</span>
+        <h2 class="section-title">من أنا؟</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-bio-card">
+          <h3>شغف بالابتكار الرقمي وهندسة الواجهات الحديثة</h3>
+          <p>
+            أنا <strong>عدي معمر عيسى</strong>، مختص في تصميم وتطوير مواقع الويب بخبرة متعمقة تجمع بين الحس الفني العصري والدقة البرمجية العالية. أؤمن بأن الموقع الناجح لا يقتصر فقط على الجمال البصري، بل يتطلب هندسة برمجية متماسكة، وسرعة استجابة فائقة، وتجربة تصفح بديهية تلبي متطلبات المستخدم بدقة.
+          </p>
+          <p>
+            أركز في جميع أعمالي على كتابة أكواد منظمة وقابلة للتطوير، مع الالتزام التام بأحدث ممارسات التصميم المتجاوب لكافة الشاشات (الهاتف، التابلت، والكمبيوتر). أسعى دوماً للتعلم المستمر ومواكبة أحدث أدوات ومكتبات الويب لتقديم حلول مبتكرة واستثنائية.
+          </p>
+
+          <div class="about-stats-row">
+            <div class="stat-item">
+              <span class="stat-num">+40</span>
+              <span class="stat-label">مشروع مكتمل</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">تصميم متجاوب</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">24/7</span>
+              <span class="stat-label">دعم والتزام</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h4>تصميم واجهات المواقع</h4>
+            <p>صياغة تجارب بصرية فريدة تعكس هوية المشروع بهدوء وغموض تقني راقٍ.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h4>تطوير مواقع الويب</h4>
+            <p>تحويل التصاميم إلى أكواد برمجية تفاعلية سريعة ومبنية بأحدث تقنيات الويب.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+            <h4>الاهتمام بتجربة المستخدم</h4>
+            <p>تخطيط رحلة المستخدم لتكون سهلة وسلسة وممتعة في كل خطوة ونقرة.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h4>التصميم المتجاوب (Responsive)</h4>
+            <p>ملاءمة تامة ومثالية لكافة قياسات الشاشات والهواتف الذكية دون أي خلل.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <h4>كتابة أكواد منظمة</h4>
+            <p>بنية برمجية نظيفة، سهلة الصيانة، ومبنية على أفضل المعايير الهندسية.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h4>التعلم المستمر</h4>
+            <p>متابعة وتطبيق أحدث الأدوات والتقنيات البرمجية أولاً بأول لضمان التميز.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">القدرات التقنية</span>
+        <h2 class="section-title">مهاراتي</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- 1. HTML -->
+        <div class="skill-card" data-percent="98">
+          <div class="skill-head">
+            <div class="skill-icon icon-html">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">HTML / HTML5</span>
+              <span class="skill-level">خبير في البنية الدلالية السليمة ومعايير الويب</span>
+            </div>
+            <span class="skill-percent">98%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill fill-html" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- 2. CSS -->
+        <div class="skill-card" data-percent="95">
+          <div class="skill-head">
+            <div class="skill-icon icon-css">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">CSS / CSS3</span>
+              <span class="skill-level">Flexbox, Grid, Animations, Glow & Dark Mode</span>
+            </div>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill fill-css" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- 3. JavaScript -->
+        <div class="skill-card" data-percent="90">
+          <div class="skill-head">
+            <div class="skill-icon icon-js">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">JavaScript (ES6+)</span>
+              <span class="skill-level">DOM Manipulation, APIs, Logic & Async Programming</span>
+            </div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill fill-js" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- 4. Web Design -->
+        <div class="skill-card" data-percent="92">
+          <div class="skill-head">
+            <div class="skill-icon icon-design">
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Web Design (UI/UX)</span>
+              <span class="skill-level">تصميم الواجهات الحديثة وتنسيق الألوان والخطوط</span>
+            </div>
+            <span class="skill-percent">92%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill fill-design" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- 5. Responsive Design -->
+        <div class="skill-card" data-percent="96">
+          <div class="skill-head">
+            <div class="skill-icon icon-responsive">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Responsive Design</span>
+              <span class="skill-level">التوافق التام مع الجوال والتابلت وجميع الشاشات</span>
+            </div>
+            <span class="skill-percent">96%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill fill-responsive" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- 6. Git & GitHub -->
+        <div class="skill-card" data-percent="88">
+          <div class="skill-head">
+            <div class="skill-icon icon-git">
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Git &amp; GitHub</span>
+              <span class="skill-level">إدارة الإصدارات، التفرع والتعاون البرمجي</span>
+            </div>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill fill-git" style="width: 0%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">نماذج مختارة</span>
+        <h2 class="section-title">أعمالي</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-img-box">
+            <img src="images/project1.jpg" alt="منصة استوديو الويب الإبداعي" class="project-img" onerror="this.onerror=null; this.src='images/project_web_studio_1790535347298.jpg';">
+            <div class="project-overlay">
+              <button class="btn-preview" onclick="openProjectModal(1)">
+                <i class="fa-solid fa-eye"></i>
+                <span>معاينة وتفاصيل</span>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>·</span>
+              <span>CSS3</span>
+              <span>·</span>
+              <span>JavaScript</span>
+            </div>
+            <h3 class="project-title">منصة استوديو الويب الإبداعي</h3>
+            <p class="project-desc">
+              موقع ويب متكامل لوكالة رقمية يقدم تجربة تصفح غامرة مع تأثيرات داكنة وتفاعل سلس، متجاوب كلياً مع جميع الشاشات.
+            </p>
+            <div class="project-footer">
+              <button class="btn-link" onclick="openProjectModal(1)">
+                <span>مشاهدة المشروع</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-img-box">
+            <img src="images/project2.jpg" alt="متجر التقنية الحديثة للتجارة الإلكترونية" class="project-img" onerror="this.onerror=null; this.src='images/project_ecommerce_tech_1790535357468.jpg';">
+            <div class="project-overlay">
+              <button class="btn-preview" onclick="openProjectModal(2)">
+                <i class="fa-solid fa-eye"></i>
+                <span>معاينة وتفاصيل</span>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Modern CSS</span>
+              <span>·</span>
+              <span>JavaScript</span>
+              <span>·</span>
+              <span>UI/UX</span>
+            </div>
+            <h3 class="project-title">متجر التقنية الحديثة للتجارة الإلكترونية</h3>
+            <p class="project-desc">
+              واجهة متجر ذكي لمنتجات الهاردوير والأجهزة التقنية بأسلوب نيون دارك، يركز على سهولة الشراء وسرعة الأداء.
+            </p>
+            <div class="project-footer">
+              <button class="btn-link" onclick="openProjectModal(2)">
+                <span>مشاهدة المشروع</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-img-box">
+            <img src="images/project3.jpg" alt="لوحة تحكم سحابية لإدارة البيانات" class="project-img" onerror="this.onerror=null; this.src='images/project_saas_dashboard_1790535367354.jpg';">
+            <div class="project-overlay">
+              <button class="btn-preview" onclick="openProjectModal(3)">
+                <i class="fa-solid fa-eye"></i>
+                <span>معاينة وتفاصيل</span>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>SaaS UI</span>
+              <span>·</span>
+              <span>Responsive</span>
+              <span>·</span>
+              <span>JavaScript</span>
+            </div>
+            <h3 class="project-title">لوحة تحكم سحابية لإدارة البيانات</h3>
+            <p class="project-desc">
+              لوحة تحكم برمجية تفاعلية لعرض الرسوم البيانية ومؤشرات الأداء في بيئة مظلمة واضحة ومريحة للعين.
+            </p>
+            <div class="project-footer">
+              <button class="btn-link" onclick="openProjectModal(3)">
+                <span>مشاهدة المشروع</span>
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">بدء تعاون جديد</span>
+        <h2 class="section-title">تواصل معي</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- معلومات الاتصال -->
+        <div class="contact-info-panel">
+          <h3 class="info-heading">دعنا نحول فكرتك إلى موقع استثنائي</h3>
+          <p class="info-lead">
+            سواء كنت ترغب في بناء موقع تعريفي كامل، متجر رقمي، أو واجهة ويب تفاعلية مخصصة، أنا متاح وجاهز لمساعدتك في كل تفصيلة.
+          </p>
+
+          <div class="contact-items">
+            <!-- الهاتف -->
+            <a href="tel:782616979" class="contact-card">
+              <div class="card-icon icon-phone">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="card-text">
+                <span class="card-label">الهاتف المباشر</span>
+                <span class="card-value">782616979</span>
+              </div>
+              <span class="card-action">اتصال الآن</span>
+            </a>
+
+            <!-- واتساب -->
+            <a href="https://wa.me/967782616979?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D8%B9%D8%AF%D9%8A%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%85%D9%88%D9%82%D8%B9." target="_blank" rel="noopener noreferrer" class="contact-card card-whatsapp">
+              <div class="card-icon icon-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="card-text">
+                <span class="card-label">محادثة WhatsApp</span>
+                <span class="card-value">782616979</span>
+              </div>
+              <span class="card-action">محادثة فورية</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/oday-moamer" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="card-icon icon-github">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="card-text">
+                <span class="card-label">حساب GitHub</span>
+                <span class="card-value">github.com/oday-moamer</span>
+              </div>
+              <span class="card-action">زيارة المستودع</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- نموذج التواصل -->
+        <div class="contact-form-panel">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">الاسم الكامل <span class="required">*</span></label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-user input-icon"></i>
+                <input type="text" id="name" name="name" class="form-input" placeholder="اكتب اسمك الكريم هنا..." required>
+              </div>
+              <span class="error-msg" id="nameError">يرجى كتابة الاسم الكامل (حرفين على الأقل).</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">البريد الإلكتروني <span class="required">*</span></label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="email" id="email" name="email" class="form-input" placeholder="example@domain.com" required>
+              </div>
+              <span class="error-msg" id="emailError">يرجى إدخال بريد إلكتروني صحيح وصالح.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">الرسالة أو تفاصيل المشروع <span class="required">*</span></label>
+              <div class="input-wrap">
+                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="اكتب تفاصيل مشروعك أو استفسارك هنا..." required></textarea>
+              </div>
+              <span class="error-msg" id="messageError">يرجى كتابة نص الرسالة (10 أحرف على الأقل).</span>
+            </div>
+
+            <button type="submit" class="btn btn-submit" id="submitBtn">
+              <span class="btn-text">إرسال الرسالة</span>
+              <i class="fa-solid fa-paper-plane btn-icon"></i>
+            </button>
+
+            <!-- رسالة النجاح -->
+            <div class="form-alert success-alert" id="successAlert">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <strong>تم إرسال رسالتك بنجاح!</strong>
+                <p>شكراً لتواصلك، سأقوم بالرد عليك عبر البريد أو الواتساب في أقرب وقت.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand-col">
+        <a href="#hero" class="footer-brand">عدي معمر عيسى</a>
+        <p class="footer-role">مختص تصميم وتطوير المواقع</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">الرئيسية</a>
+        <a href="#about">عني</a>
+        <a href="#skills">مهاراتي</a>
+        <a href="#projects">أعمالي</a>
+        <a href="#contact">تواصل معي</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://wa.me/967782616979" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/oday-moamer" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="tel:782616979" aria-label="Phone" class="social-icon">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 عدي معمر عيسى – جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر العودة لأعلى الصفحة -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة لأعلى الصفحة">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- نافذة المعاينة السريعة للمشروع (Project Modal) -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProjectModal()" aria-label="إغلاق">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body" id="modalBody">
+        <!-- المحتوى يتغير ديناميكياً بواسطة JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ملف الجافاسكريبت الرئيسي -->
+  <script src="script.js"></script>
+</body>
+</html>
